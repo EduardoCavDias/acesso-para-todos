@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Práticas de desenvolvimento web acessível: HTML semântico, títulos, teclado, links, imagens, contraste, texto claro e multimídia.">
+  <meta name="theme-color" content="#102a43">
+  <title>Como criar uma web acessível | Acesso para Todos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="topo">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<a class="skip-link skip-link-second" href="#navegacao">Pular para a navegação</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Acesso para Todos — página inicial">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">acesso<span>para</span>todos</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao">
+      <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      <span class="menu-toggle-text">Abrir menu</span>
+    </button>
+    <nav id="navegacao" class="site-nav" aria-label="Navegação principal">
+      <ul><li><a href="index.html">Início</a></li>
+<li><a href="cotidiano.html">No cotidiano</a></li>
+<li><a href="barreiras.html">Barreiras</a></li>
+<li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+<li><a href="web-acessivel.html" aria-current="page">Web acessível</a></li>
+<li><a href="boas-praticas.html">Boas práticas</a></li></ul>
+    </nav>
+  </div>
+</header>
+<div class="access-tools" aria-label="Ferramentas de acessibilidade">
+  <div class="access-tools-inner">
+    <span class="tools-label">Ajuste a leitura</span>
+    <div class="tool-buttons">
+      <button type="button" class="tool-button" data-action="font-decrease" aria-label="Diminuir tamanho do texto">A−</button>
+      <button type="button" class="tool-button" data-action="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="speak">Ouvir página</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="stop-speech" disabled>Parar leitura</button>
+    </div>
+    <span class="sr-only" id="tool-status" role="status" aria-live="polite"></span>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+  <section class="page-intro" aria-labelledby="titulo-pagina">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <p class="eyebrow">Acessibilidade desde o código</p>
+        <h1 id="titulo-pagina">Uma página acessível começa com uma boa estrutura.</h1>
+        <p class="intro-lead">HTML semântico, conteúdo claro e controles operáveis ajudam navegadores e tecnologias assistivas a interpretar uma página. O visual é importante, mas a estrutura do código é a base.</p>
+      </div>
+      <div class="intro-side-note"><span class="note-symbol" aria-hidden="true">✳</span><p>Um ambiente acessível remove barreiras e amplia possibilidades para todo mundo.</p></div>
+    </div>
+  </section>
+  <section class="article-layout container">
+  <aside class="article-index" aria-label="Sumário desta página"><p class="index-title">Ir para uma prática</p><ul><li><a href="#estrutura">Estrutura e títulos</a></li><li><a href="#teclado">Navegação por teclado</a></li><li><a href="#links-imagens">Links e imagens</a></li><li><a href="#visual">Contraste e leitura</a></li><li><a href="#multimidia">Áudio e vídeo</a></li></ul></aside>
+  <article class="article-content">
+    <section id="estrutura" class="article-section"><p class="eyebrow">01 / Marcação</p><h2>Use elementos HTML para sua finalidade.</h2><p>Elementos semânticos descrevem o papel de cada parte da página. Use cabeçalho, navegação, conteúdo principal, seções e rodapé. Um leitor de tela pode reconhecer essas regiões e facilitar a navegação.</p><p>Organize títulos em níveis hierárquicos. Em cada página, utilize um título principal <code>h1</code> e organize as seções com <code>h2</code>, <code>h3</code> e assim por diante, sem saltar níveis apenas por causa da aparência.</p><div class="code-example"><p class="code-label">Exemplo de hierarquia</p><pre><code>&lt;h1&gt;Acessibilidade na Web&lt;/h1&gt;
+  &lt;h2&gt;Imagens acessíveis&lt;/h2&gt;
+    &lt;h3&gt;Texto alternativo&lt;/h3&gt;
+  &lt;h2&gt;Navegação por teclado&lt;/h2&gt;</code></pre></div></section>
+    <section id="teclado" class="article-section"><p class="eyebrow">02 / Operação</p><h2>Garanta o uso sem mouse.</h2><p>Todos os recursos interativos precisam funcionar com teclado. A tecla <kbd>Tab</kbd> deve percorrer links e controles em uma ordem lógica, <kbd>Enter</kbd> deve ativar links e botões, e <kbd>Esc</kbd> pode fechar menus ou diálogos quando aplicável.</p><p>O foco precisa estar visível. Evite remover o contorno padrão sem oferecer uma alternativa clara. Não crie armadilhas de teclado nem dependa apenas de passar o cursor sobre um elemento.</p></section>
+    <section id="links-imagens" class="article-section"><p class="eyebrow">03 / Conteúdo</p><h2>Descreva destinos e conteúdos.</h2><p>O texto de um link deve fazer sentido mesmo quando lido fora do parágrafo. Evite rótulos vagos como “clique aqui” ou vários links “saiba mais”. Prefira identificar o assunto ou destino.</p><p>Imagens informativas precisam de texto alternativo objetivo. Imagens decorativas devem ser ignoradas por tecnologias assistivas, por exemplo com <code>alt=""</code>. Para gráficos e imagens complexas, ofereça também uma explicação detalhada em texto.</p><div class="code-example"><p class="code-label">Exemplo de imagem com informação</p><pre><code>&lt;img src="mapa.jpg"
+     alt="Mapa das entradas acessíveis
+          do parque municipal"&gt;</code></pre></div></section>
+    <section id="visual" class="article-section"><p class="eyebrow">04 / Apresentação</p><h2>Facilite a leitura e não dependa só da cor.</h2><p>Escolha combinações com contraste adequado entre texto e fundo. Como referência geral para texto comum, o critério WCAG AA utiliza uma relação mínima de 4,5:1. Permita ampliar o conteúdo sem esconder informações ou funções.</p><p>Não comunique significado apenas pela cor, posição, formato ou tamanho. Se um campo é obrigatório, escreva “obrigatório”; se um item está indisponível, informe isso em texto além de usar uma cor diferente.</p><p>Prefira frases diretas, parágrafos curtos, listas para conjuntos de itens e explicação de siglas na primeira ocorrência.</p></section>
+    <section id="multimidia" class="article-section"><p class="eyebrow">05 / Multimídia</p><h2>Ofereça alternativas para áudio e vídeo.</h2><p>Vídeos com áudio devem ter legendas sincronizadas. Uma transcrição textual pode reunir falas e informações visuais importantes. Quando elementos visuais não forem explicados pelo áudio, considere audiodescrição. Libras também pode ampliar o acesso para parte do público surdo.</p><p>Não inicie áudio ou vídeo automaticamente. Dê ao usuário controle para iniciar, pausar, retomar e parar a reprodução.</p></section>
+    <div class="article-callout"><h2>Conteúdos longos também precisam de orientação.</h2><p>Um sumário com links para as seções ajuda a encontrar informações e reduz a necessidade de percorrer toda a página. Inclua links para retornar ao início do conteúdo quando fizer sentido.</p><a class="text-link" href="boas-praticas.html">Use o checklist de avaliação <span aria-hidden="true">→</span></a></div>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-about">
+      <a class="brand brand-footer" href="index.html" aria-label="Acesso para Todos — página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">acesso<span>para</span>todos</span>
+      </a>
+      <p>Informação, autonomia e participação começam quando os caminhos são pensados para todas as pessoas.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore o site</h2>
+      <ul class="footer-links">
+        <li><a href="cotidiano.html">Acessibilidade no cotidiano</a></li>
+        <li><a href="barreiras.html">Barreiras e soluções</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="web-acessivel.html">Como funciona a web acessível</a></li>
+        <li><a href="boas-praticas.html">Boas práticas e avaliação</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Sobre o projeto</h2>
+      <p>Projeto acadêmico de Programação Web sobre acessibilidade e inclusão.</p>
+      <a class="footer-source-link" href="boas-praticas.html#fontes">Consultar fontes e referências <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year>2026</span> Acesso para Todos. Projeto educacional.</p>
+    <a href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+</body>
+</html>

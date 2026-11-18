@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Checklist interativo para avaliação inicial de acessibilidade e referências utilizadas no desenvolvimento do projeto.">
+  <meta name="theme-color" content="#102a43">
+  <title>Boas práticas e avaliação | Acesso para Todos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="topo">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<a class="skip-link skip-link-second" href="#navegacao">Pular para a navegação</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Acesso para Todos — página inicial">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">acesso<span>para</span>todos</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao">
+      <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      <span class="menu-toggle-text">Abrir menu</span>
+    </button>
+    <nav id="navegacao" class="site-nav" aria-label="Navegação principal">
+      <ul><li><a href="index.html">Início</a></li>
+<li><a href="cotidiano.html">No cotidiano</a></li>
+<li><a href="barreiras.html">Barreiras</a></li>
+<li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+<li><a href="web-acessivel.html">Web acessível</a></li>
+<li><a href="boas-praticas.html" aria-current="page">Boas práticas</a></li></ul>
+    </nav>
+  </div>
+</header>
+<div class="access-tools" aria-label="Ferramentas de acessibilidade">
+  <div class="access-tools-inner">
+    <span class="tools-label">Ajuste a leitura</span>
+    <div class="tool-buttons">
+      <button type="button" class="tool-button" data-action="font-decrease" aria-label="Diminuir tamanho do texto">A−</button>
+      <button type="button" class="tool-button" data-action="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="speak">Ouvir página</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="stop-speech" disabled>Parar leitura</button>
+    </div>
+    <span class="sr-only" id="tool-status" role="status" aria-live="polite"></span>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+  <section class="page-intro" aria-labelledby="titulo-pagina">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <p class="eyebrow">Revisar, testar, melhorar</p>
+        <h1 id="titulo-pagina">Acessibilidade é um processo contínuo.</h1>
+        <p class="intro-lead">Uma página não se torna acessível apenas porque utiliza uma ferramenta automática. É necessário validar o código, percorrer o conteúdo, testar com teclado e, sempre que possível, ouvir pessoas que utilizam tecnologias assistivas.</p>
+      </div>
+      <div class="intro-side-note"><span class="note-symbol" aria-hidden="true">✳</span><p>Um ambiente acessível remove barreiras e amplia possibilidades para todo mundo.</p></div>
+    </div>
+  </section>
+  <section class="section-block container" aria-labelledby="avaliar-titulo">
+  <div class="section-heading"><p class="eyebrow">Teste inicial</p><h2 id="avaliar-titulo">Checklist de acessibilidade.</h2><p>Marque os itens que você realmente verificou no site. O resultado ajuda a organizar a revisão, mas não representa uma certificação de conformidade.</p></div>
+  <form class="checklist-form" id="accessibility-checklist">
+    <fieldset>
+      <legend>Itens para revisar</legend>
+      <div class="checklist-grid">
+        <label class="check-item"><input type="checkbox" name="check" value="skip"><span><strong>Atalho para pular blocos repetidos</strong><small>Existe um link para ir direto ao conteúdo principal.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="headings"><span><strong>Títulos organizados</strong><small>Há um título principal e níveis hierárquicos coerentes.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="keyboard"><span><strong>Navegação por teclado</strong><small>Links e controles funcionam com Tab, Enter e teclas adequadas.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="focus"><span><strong>Foco visível</strong><small>É possível identificar onde o teclado está posicionado.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="images"><span><strong>Alternativas para imagens</strong><small>Imagens informativas possuem descrições adequadas.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="contrast"><span><strong>Contraste e ampliação</strong><small>O conteúdo é legível e pode ser ampliado sem perder funções.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="links"><span><strong>Links descritivos</strong><small>O texto dos links informa o destino ou a finalidade.</small></span></label>
+        <label class="check-item"><input type="checkbox" name="check" value="media"><span><strong>Alternativas multimídia</strong><small>Vídeos e áudios possuem legendas ou transcrições quando necessário.</small></span></label>
+      </div>
+    </fieldset>
+    <div class="checklist-actions"><button class="button button-primary" type="submit">Ver resultado da revisão</button><button class="button button-secondary" type="reset">Limpar marcações</button></div>
+    <p id="checklist-result" class="form-feedback" role="status" aria-live="polite">Nenhum item foi marcado ainda.</p>
+  </form>
+</section>
+<section class="soft-band"><div class="container two-column"><div><p class="eyebrow">Como avaliar</p><h2>Combine ferramentas e testes humanos.</h2></div><div><ol class="number-list"><li>Valide o HTML e o CSS.</li><li>Verifique a sequência de leitura com teclado e, quando possível, leitor de tela.</li><li>Teste o conteúdo sem estilos, scripts e imagens para identificar dependências.</li><li>Use ferramentas automáticas como apoio, não como prova única.</li><li>Faça uma revisão manual e corrija os problemas encontrados.</li><li>Repita os testes sempre que o conteúdo ou o código mudar.</li></ol><p>Ferramentas automáticas detectam apenas parte dos problemas. Uma avaliação completa também depende de inspeção manual e de experiências reais de uso.</p><a class="text-link" href="https://asesweb.governoeletronico.gov.br/" target="_blank" rel="noopener noreferrer">Acessar o avaliador ASES <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="section-block container" id="fontes" aria-labelledby="fontes-titulo">
+  <div class="section-heading"><p class="eyebrow">Referências</p><h2 id="fontes-titulo">Materiais consultados.</h2><p>O conteúdo do site foi elaborado a partir dos materiais didáticos enviados para a atividade e de referências oficiais complementares.</p></div>
+  <ol class="reference-list">
+    <li><strong>Escola Nacional de Administração Pública (Enap).</strong> <em>eMAG Conteudista — Módulo 1: Introdução.</em> Atualizado em outubro de 2016. Conteúdos sobre acessibilidade na web, barreiras enfrentadas por pessoas com deficiência e tecnologia assistiva. Material didático em PDF fornecido junto à atividade.</li>
+    <li><strong>Escola Nacional de Administração Pública (Enap).</strong> <em>eMAG Conteudista — Módulo 2: Web Acessível.</em> Atualizado em novembro de 2016. Conteúdos sobre WCAG 2.0, eMAG, práticas web acessíveis e avaliação de acessibilidade. Material didático em PDF fornecido junto à atividade.</li>
+    <li><strong>W3C.</strong> <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener noreferrer">Web Content Accessibility Guidelines (WCAG) 2.2</a>. Recomendação publicada em 12 de dezembro de 2024. Referência internacional mais recente da série WCAG 2 consultada neste projeto.</li>
+    <li><strong>Governo Digital.</strong> <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-e-usuario/acessibilidade-digital/modelo-de-acessibilidade" target="_blank" rel="noopener noreferrer">Modelo de Acessibilidade em Governo Eletrônico (eMAG)</a>. Página oficial com informações e documentos do modelo brasileiro.</li>
+    <li><strong>eMAG.</strong> <a href="https://emag.governoeletronico.gov.br/" target="_blank" rel="noopener noreferrer">Modelo de Acessibilidade em Governo Eletrônico — versão 3.1</a>. Documento oficial brasileiro de recomendações de acessibilidade digital.</li>
+  </ol>
+  <p class="source-note"><strong>Nota sobre versões:</strong> os PDFs didáticos utilizados na atividade apresentam WCAG 2.0 e eMAG 3.1. O projeto preserva os conceitos fundamentais estudados e consulta também WCAG 2.2 como referência complementar atual. Isso não significa que o site tenha sido certificado formalmente em qualquer nível de conformidade.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-about">
+      <a class="brand brand-footer" href="index.html" aria-label="Acesso para Todos — página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">acesso<span>para</span>todos</span>
+      </a>
+      <p>Informação, autonomia e participação começam quando os caminhos são pensados para todas as pessoas.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore o site</h2>
+      <ul class="footer-links">
+        <li><a href="cotidiano.html">Acessibilidade no cotidiano</a></li>
+        <li><a href="barreiras.html">Barreiras e soluções</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="web-acessivel.html">Como funciona a web acessível</a></li>
+        <li><a href="boas-praticas.html">Boas práticas e avaliação</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Sobre o projeto</h2>
+      <p>Projeto acadêmico de Programação Web sobre acessibilidade e inclusão.</p>
+      <a class="footer-source-link" href="boas-praticas.html#fontes">Consultar fontes e referências <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year>2026</span> Acesso para Todos. Projeto educacional.</p>
+    <a href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+</body>
+</html>

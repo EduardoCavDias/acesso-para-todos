@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Artigo sobre acessibilidade em espaços públicos, transporte, educação, trabalho, comunicação e serviços digitais.">
+  <meta name="theme-color" content="#102a43">
+  <title>Acessibilidade no cotidiano | Acesso para Todos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="topo">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<a class="skip-link skip-link-second" href="#navegacao">Pular para a navegação</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Acesso para Todos — página inicial">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">acesso<span>para</span>todos</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao">
+      <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      <span class="menu-toggle-text">Abrir menu</span>
+    </button>
+    <nav id="navegacao" class="site-nav" aria-label="Navegação principal">
+      <ul><li><a href="index.html">Início</a></li>
+<li><a href="cotidiano.html" aria-current="page">No cotidiano</a></li>
+<li><a href="barreiras.html">Barreiras</a></li>
+<li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+<li><a href="web-acessivel.html">Web acessível</a></li>
+<li><a href="boas-praticas.html">Boas práticas</a></li></ul>
+    </nav>
+  </div>
+</header>
+<div class="access-tools" aria-label="Ferramentas de acessibilidade">
+  <div class="access-tools-inner">
+    <span class="tools-label">Ajuste a leitura</span>
+    <div class="tool-buttons">
+      <button type="button" class="tool-button" data-action="font-decrease" aria-label="Diminuir tamanho do texto">A−</button>
+      <button type="button" class="tool-button" data-action="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="speak">Ouvir página</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="stop-speech" disabled>Parar leitura</button>
+    </div>
+    <span class="sr-only" id="tool-status" role="status" aria-live="polite"></span>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+  <section class="page-intro" aria-labelledby="titulo-pagina">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <p class="eyebrow">Acessibilidade além da internet</p>
+        <h1 id="titulo-pagina">O cotidiano precisa funcionar para pessoas diferentes.</h1>
+        <p class="intro-lead">Acessibilidade aparece no caminho até a escola, no transporte, em uma consulta, numa conversa e na forma como recebemos informações. Ela permite que mais pessoas participem com segurança e autonomia.</p>
+      </div>
+      <div class="intro-side-note"><span class="note-symbol" aria-hidden="true">✳</span><p>Um ambiente acessível remove barreiras e amplia possibilidades para todo mundo.</p></div>
+    </div>
+  </section>
+  <section class="article-layout container">
+  <aside class="article-index" aria-label="Nesta página">
+    <p class="index-title">Nesta página</p>
+    <ul><li><a href="#espacos">Espaços públicos</a></li><li><a href="#transporte">Transporte e mobilidade</a></li><li><a href="#educacao">Educação e trabalho</a></li><li><a href="#comunicacao">Comunicação e serviços</a></li></ul>
+  </aside>
+  <article class="article-content">
+    <section id="espacos" class="article-section">
+      <p class="eyebrow">01 / Espaços</p><h2>Espaços públicos que acolhem.</h2>
+      <p>Uma praça, uma unidade de saúde ou um prédio público precisa oferecer condições de entrada, circulação, orientação e uso. Acessibilidade não se resume a instalar uma rampa: é preciso observar o percurso completo e as necessidades de quem utiliza o espaço.</p>
+      <div class="info-panel"><span class="panel-icon" aria-hidden="true">↗</span><div><h3>Na prática</h3><p>Calçadas contínuas, rampas bem posicionadas, piso tátil onde necessário, elevadores funcionais, portas adequadas, sinalização legível e banheiros acessíveis fazem parte de um ambiente mais inclusivo.</p></div></div>
+      <p>Também é importante manter os caminhos livres. Uma rampa bloqueada por objetos ou uma calçada ocupada por veículos deixa de cumprir sua função.</p>
+    </section>
+    <section id="transporte" class="article-section">
+      <p class="eyebrow">02 / Mobilidade</p><h2>Transporte e deslocamento com autonomia.</h2>
+      <p>O acesso ao transporte depende de várias etapas: chegar ao ponto, identificar a linha, embarcar, encontrar informação sobre o trajeto e desembarcar com segurança. A barreira em apenas uma dessas etapas pode impedir a viagem inteira.</p>
+      <ul class="check-list"><li>Informações de linhas e horários em formatos legíveis e acessíveis.</li><li>Anúncios sonoros e visuais sobre paradas e mudanças de percurso.</li><li>Veículos e estações com recursos de embarque e circulação acessíveis.</li><li>Atendimento preparado para orientar sem retirar a autonomia do passageiro.</li></ul>
+    </section>
+    <section id="educacao" class="article-section">
+      <p class="eyebrow">03 / Aprendizagem e trabalho</p><h2>Participar, aprender e trabalhar.</h2>
+      <p>Uma atividade escolar pode excluir quando depende apenas de uma imagem sem descrição, de um vídeo sem legenda ou de um material que não pode ser ampliado. No trabalho, sistemas internos inacessíveis também podem impedir que uma pessoa execute suas tarefas.</p>
+      <p>Oferecer materiais em formatos acessíveis, instruções claras, adaptações razoáveis e diferentes formas de participação beneficia pessoas com deficiência e também quem enfrenta limitações temporárias, utiliza celular ou precisa de uma conexão mais simples.</p>
+    </section>
+    <section id="comunicacao" class="article-section">
+      <p class="eyebrow">04 / Informação</p><h2>Comunicação e serviços para todo mundo.</h2>
+      <p>Formulários, comunicados, aplicativos e atendimentos devem apresentar informações claras. Um formulário acessível identifica cada campo, informa quais dados são obrigatórios e explica como corrigir um erro.</p>
+      <p>Em vídeos, legendas ajudam pessoas surdas ou com deficiência auditiva. Transcrições também permitem acessar o conteúdo sem áudio, enquanto a audiodescrição pode transmitir informações visuais relevantes.</p>
+    </section>
+    <div class="article-callout"><h2>A pergunta que ajuda a começar</h2><p>“Quem pode ficar de fora desta experiência e qual barreira está impedindo a participação?”</p><a class="text-link" href="barreiras.html">Veja exemplos de barreiras e soluções <span aria-hidden="true">→</span></a></div>
+  </article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-about">
+      <a class="brand brand-footer" href="index.html" aria-label="Acesso para Todos — página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">acesso<span>para</span>todos</span>
+      </a>
+      <p>Informação, autonomia e participação começam quando os caminhos são pensados para todas as pessoas.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore o site</h2>
+      <ul class="footer-links">
+        <li><a href="cotidiano.html">Acessibilidade no cotidiano</a></li>
+        <li><a href="barreiras.html">Barreiras e soluções</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="web-acessivel.html">Como funciona a web acessível</a></li>
+        <li><a href="boas-praticas.html">Boas práticas e avaliação</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Sobre o projeto</h2>
+      <p>Projeto acadêmico de Programação Web sobre acessibilidade e inclusão.</p>
+      <a class="footer-source-link" href="boas-praticas.html#fontes">Consultar fontes e referências <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year>2026</span> Acesso para Todos. Projeto educacional.</p>
+    <a href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+</body>
+</html>

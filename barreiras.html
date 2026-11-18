@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça barreiras enfrentadas por pessoas com diferentes necessidades e soluções para reduzir obstáculos em ambientes e serviços.">
+  <meta name="theme-color" content="#102a43">
+  <title>Barreiras de acessibilidade | Acesso para Todos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body id="topo">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<a class="skip-link skip-link-second" href="#navegacao">Pular para a navegação</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Acesso para Todos — página inicial">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">acesso<span>para</span>todos</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao">
+      <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+      <span class="menu-toggle-text">Abrir menu</span>
+    </button>
+    <nav id="navegacao" class="site-nav" aria-label="Navegação principal">
+      <ul><li><a href="index.html">Início</a></li>
+<li><a href="cotidiano.html">No cotidiano</a></li>
+<li><a href="barreiras.html" aria-current="page">Barreiras</a></li>
+<li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+<li><a href="web-acessivel.html">Web acessível</a></li>
+<li><a href="boas-praticas.html">Boas práticas</a></li></ul>
+    </nav>
+  </div>
+</header>
+<div class="access-tools" aria-label="Ferramentas de acessibilidade">
+  <div class="access-tools-inner">
+    <span class="tools-label">Ajuste a leitura</span>
+    <div class="tool-buttons">
+      <button type="button" class="tool-button" data-action="font-decrease" aria-label="Diminuir tamanho do texto">A−</button>
+      <button type="button" class="tool-button" data-action="font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="contrast" aria-pressed="false">Alto contraste</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="speak">Ouvir página</button>
+      <button type="button" class="tool-button tool-button-wide" data-action="stop-speech" disabled>Parar leitura</button>
+    </div>
+    <span class="sr-only" id="tool-status" role="status" aria-live="polite"></span>
+  </div>
+</div>
+<main id="conteudo" tabindex="-1">
+  <section class="page-intro" aria-labelledby="titulo-pagina">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <p class="eyebrow">Identificar para transformar</p>
+        <h1 id="titulo-pagina">A barreira está no ambiente, não na pessoa.</h1>
+        <p class="intro-lead">Uma experiência deixa de ser acessível quando exige uma única forma de enxergar, ouvir, compreender, se movimentar ou interagir. Identificar essas barreiras é o primeiro passo para removê-las.</p>
+      </div>
+      <div class="intro-side-note"><span class="note-symbol" aria-hidden="true">✳</span><p>Um ambiente acessível remove barreiras e amplia possibilidades para todo mundo.</p></div>
+    </div>
+  </section>
+  <section class="section-block container" aria-labelledby="barreiras-exemplos">
+  <div class="section-heading"><p class="eyebrow">Situações do dia a dia</p><h2 id="barreiras-exemplos">O mesmo serviço pode apresentar obstáculos diferentes.</h2><p>As necessidades variam entre pessoas e contextos. Os exemplos abaixo não representam todas as experiências, mas ajudam a reconhecer problemas comuns.</p></div>
+  <div class="barrier-list">
+    <article class="barrier-card"><div class="barrier-tag">Acesso visual</div><div><h3>Informação que só aparece em uma imagem.</h3><p>Um cartaz com data, endereço e instruções, mas sem versão em texto, pode não ser compreendido por quem utiliza leitor de tela.</p><p class="solution"><strong>Como reduzir:</strong> escrever as informações essenciais no próprio conteúdo e oferecer texto alternativo adequado para a imagem.</p></div><span class="barrier-symbol" aria-hidden="true">◉</span></article>
+    <article class="barrier-card"><div class="barrier-tag">Baixa visão e contraste</div><div><h3>Texto pequeno e com pouco contraste.</h3><p>Textos claros sobre fundos claros, fontes decoradas e elementos que se quebram quando ampliados dificultam a leitura.</p><p class="solution"><strong>Como reduzir:</strong> usar contraste suficiente, fontes legíveis, ampliação sem perda de função e espaçamento confortável.</p></div><span class="barrier-symbol" aria-hidden="true">Aa</span></article>
+    <article class="barrier-card"><div class="barrier-tag">Acesso auditivo</div><div><h3>Vídeo importante sem legenda.</h3><p>Quando uma orientação é transmitida apenas por áudio, parte do público não recebe a informação.</p><p class="solution"><strong>Como reduzir:</strong> incluir legendas sincronizadas e, quando adequado, transcrição e interpretação em Libras.</p></div><span class="barrier-symbol" aria-hidden="true">≋</span></article>
+    <article class="barrier-card"><div class="barrier-tag">Mobilidade e interação</div><div><h3>Botões que só funcionam com mouse.</h3><p>Menus que dependem de passar o cursor, áreas de clique pequenas ou limites de tempo podem impedir a interação.</p><p class="solution"><strong>Como reduzir:</strong> garantir funcionamento por teclado, foco visível, controles com tamanho adequado e tempo suficiente.</p></div><span class="barrier-symbol" aria-hidden="true">⌨</span></article>
+    <article class="barrier-card"><div class="barrier-tag">Compreensão</div><div><h3>Instruções longas, confusas ou imprevisíveis.</h3><p>Parágrafos extensos, siglas sem explicação, mudanças inesperadas e mensagens vagas aumentam o esforço para concluir uma tarefa.</p><p class="solution"><strong>Como reduzir:</strong> usar linguagem direta, dividir conteúdos em etapas e explicar erros com clareza.</p></div><span class="barrier-symbol" aria-hidden="true">¶</span></article>
+    <article class="barrier-card"><div class="barrier-tag">Percepção das cores</div><div><h3>Um aviso identificado somente pela cor.</h3><p>Se um campo obrigatório é indicado apenas em vermelho, nem todas as pessoas conseguem identificar a exigência.</p><p class="solution"><strong>Como reduzir:</strong> combinar cor com texto, ícone acompanhado de rótulo ou outra indicação perceptível.</p></div><span class="barrier-symbol" aria-hidden="true">◐</span></article>
+  </div>
+</section>
+<section class="soft-band"><div class="container two-column"><div><p class="eyebrow">Um cuidado importante</p><h2>Não existe uma pessoa padrão.</h2></div><div><p>Uma pessoa pode ter mais de uma deficiência, utilizar recursos diferentes em cada situação ou enfrentar uma limitação temporária. Por isso, acessibilidade deve ser pensada desde o planejamento e testada com diversidade de usuários.</p><a class="text-link" href="tecnologia-assistiva.html">Conheça recursos de apoio <span aria-hidden="true">→</span></a></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-about">
+      <a class="brand brand-footer" href="index.html" aria-label="Acesso para Todos — página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">acesso<span>para</span>todos</span>
+      </a>
+      <p>Informação, autonomia e participação começam quando os caminhos são pensados para todas as pessoas.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore o site</h2>
+      <ul class="footer-links">
+        <li><a href="cotidiano.html">Acessibilidade no cotidiano</a></li>
+        <li><a href="barreiras.html">Barreiras e soluções</a></li>
+        <li><a href="tecnologia-assistiva.html">Tecnologia assistiva</a></li>
+        <li><a href="web-acessivel.html">Como funciona a web acessível</a></li>
+        <li><a href="boas-praticas.html">Boas práticas e avaliação</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Sobre o projeto</h2>
+      <p>Projeto acadêmico de Programação Web sobre acessibilidade e inclusão.</p>
+      <a class="footer-source-link" href="boas-praticas.html#fontes">Consultar fontes e referências <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span data-year>2026</span> Acesso para Todos. Projeto educacional.</p>
+    <a href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+</body>
+</html>

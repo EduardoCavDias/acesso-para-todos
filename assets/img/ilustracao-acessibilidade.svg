@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 390" role="img" aria-labelledby="title desc">
+<title id="title">Pessoas em um espaço público acessível</title><desc id="desc">Ilustração com quatro pessoas em um espaço verde, incluindo uma pessoa em cadeira de rodas e outra usando bengala, conectadas por um caminho amplo.</desc>
+<rect x="14" y="16" width="512" height="358" rx="34" fill="#e5efeb"/>
+<circle cx="432" cy="88" r="39" fill="#d7f36a"/>
+<path d="M43 297 C130 266 205 316 279 291 S430 260 497 291" fill="none" stroke="#075c62" stroke-width="17" stroke-linecap="round" opacity=".15"/>
+<path d="M58 326 H480" stroke="#8db7a7" stroke-width="8" stroke-linecap="round"/>
+<!-- pessoa à esquerda -->
+<circle cx="133" cy="132" r="25" fill="#9b654b"/><path d="M109 130 Q111 98 139 103 Q162 106 157 129 Q140 118 109 130" fill="#102a43"/>
+<path d="M111 164 Q131 153 154 166 L166 232 L103 232Z" fill="#075c62"/><path d="M119 230 L113 293 M150 230 L158 293" stroke="#102a43" stroke-width="15" stroke-linecap="round"/>
+<path d="M111 176 L88 219 M155 179 L177 205" stroke="#9b654b" stroke-width="11" stroke-linecap="round"/>
+<!-- cadeira de rodas -->
+<circle cx="291" cy="259" r="45" fill="none" stroke="#075c62" stroke-width="8"/><circle cx="291" cy="259" r="7" fill="#075c62"/><path d="M269 212 L290 245 L324 246 M290 245 L269 277" fill="none" stroke="#075c62" stroke-width="7" stroke-linecap="round"/>
+<circle cx="264" cy="149" r="24" fill="#c58b68"/><path d="M241 145 Q243 112 271 121 Q285 126 286 145 Q264 135 241 145" fill="#102a43"/>
+<path d="M245 180 Q264 166 284 183 L300 220 L267 238 L236 214Z" fill="#a8d83f"/><path d="M250 211 L279 236" stroke="#c58b68" stroke-width="10" stroke-linecap="round"/>
+<!-- pessoa central -->
+<circle cx="387" cy="157" r="23" fill="#754a35"/><path d="M366 153 Q363 125 389 127 Q411 128 411 153 Q391 143 366 153" fill="#102a43"/>
+<path d="M364 188 Q385 174 404 190 L416 248 L352 248Z" fill="#f0a45a"/><path d="M367 244 L358 295 M401 244 L410 295" stroke="#102a43" stroke-width="13" stroke-linecap="round"/>
+<path d="M365 195 L342 230 M404 196 L426 222" stroke="#754a35" stroke-width="10" stroke-linecap="round"/>
+<!-- sinalização -->
+<rect x="55" y="48" width="102" height="44" rx="12" fill="#fff"/><path d="M73 71 l9 9 18-21" fill="none" stroke="#075c62" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M111 69 H140" stroke="#102a43" stroke-width="5" stroke-linecap="round"/>
+<rect x="349" y="286" width="112" height="53" rx="12" fill="#fff"/><path d="M365 313 H444" stroke="#075c62" stroke-width="5" stroke-linecap="round"/><path d="M365 325 H419" stroke="#9ab1a8" stroke-width="5" stroke-linecap="round"/>
+</svg>
